@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Pattern Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Text Pattern Generator</h1>
+        <input type="text" id="userText" placeholder="Enter your text here">
+        <button id="generateBtn">Generate Pattern</button>
+        <canvas id="patternCanvas" width="1080" height="1080"></canvas>
+        <a id="downloadLink" style="display: none;" download="pattern.jpg">Download Image</a>
+        <div id="errorMessages" style="color: red; margin-top: 20px;"></div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="close-button">&times;</span>
+            <p id="modal-message"></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
