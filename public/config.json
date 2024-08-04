@@ -1,6 +1,19 @@
 {
     "rotations": [0, 15, 45, 90, -15, -45, -90],
-    "fontFamilies": ["Arial", "Verdana", "Times New Roman", "Courier New", "Georgia", "Roboto", "Lobster", "Open Sans", "Noto Sans", "Noto Serif"],
+    "fontFamilies": [
+        "Arial", 
+        "Verdana", 
+        "Times New Roman", 
+        "Courier New", 
+        "Georgia", 
+        "Roboto", 
+        "Lobster", 
+        "Open Sans", 
+        "Noto Sans", 
+        "Noto Serif", 
+        "Noto Sans Hindi", 
+        "Noto Serif Tamil"
+    ],
     "fontWeights": ["normal", "bold", "bolder", "lighter", "100", "200", "300", "400", "500", "600", "700", "800", "900"],
     "numberOfTexts": 300,
     "fontSizeRange": [10, 80],
