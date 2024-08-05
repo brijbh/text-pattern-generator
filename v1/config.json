@@ -1,0 +1,20 @@
+{
+    "rotations": [0, 15, 45, 90, -15, -45, -90],
+    "fontFamilies": ["Arial", "Verdana", "Times New Roman", "Courier New", "Georgia", "Roboto", "Lobster", "Open Sans", "Noto Sans Devanagari", "Noto Sans Tamil"],
+    "fontWeights": ["normal", "bold", "bolder", "lighter", "100", "200", "300", "400", "500", "600", "700", "800", "900"],
+    "numberOfTexts": 300,
+    "fontSizeRange": [10, 80],
+    "outputDimensions": {
+        "width": 1080,
+        "height": 1080
+    },
+    "maxSteps": 5000,
+    "colorSchemes": {
+        "scheme1": ["#FF5733", "#33FF57", "#3357FF", "#F333FF", "#FF33A6"],
+        "scheme2": ["#8E44AD", "#2980B9", "#16A085", "#F39C12", "#D35400"],
+        "scheme3": ["#E74C3C", "#2ECC71", "#3498DB", "#9B59B6", "#1ABC9C"],
+        "scheme4": ["#C0392B", "#27AE60", "#2980B9", "#8E44AD", "#F1C40F"],
+        "scheme5": ["#E67E22", "#2E86C1", "#1ABC9C", "#F39C12", "#8E44AD"]
+    },
+    "googleCloudApiKey": "AIzaSyCoWuAeyv50A2HbAxUrbKj5hd2ymwhj2R8"
+}
