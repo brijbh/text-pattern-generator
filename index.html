@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Pattern Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Sanscript CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@indic-transliteration/sanscript"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Text Pattern Generator</h1>
+        <p>Create beautiful text patterns in various languages and shapes.</p>
+        <div class="content">
+            <div class="form-container">
+                <input type="text" id="userText" placeholder="Enter your text here">
+                <select id="languageSelect">
+                    <option value="english">English</option>
+                    <option value="hindi">Hindi</option>
+                    <option value="tamil">Tamil</option>
+                    <option value="telugu">Telugu</option>
+                    <option value="bengali">Bengali</option>
+                    <option value="french">French</option>
+                    <option value="spanish">Spanish</option>
+                </select>
+                <select id="shapeSelect">
+                    <option value="rectangle">Rectangle</option>
+                    <option value="square">Square</option>
+                    <option value="circle">Circle</option>
+                    <option value="ellipse">Ellipse</option>
+                    <option value="triangle">Triangle</option>
+                </select>
+                <div id="shapeDimensions">
+                    <input type="number" id="shapeWidth" placeholder="Shape Width">
+                    <input type="number" id="shapeHeight" placeholder="Shape Height">
+                </div>
+                <div id="colorSchemes">
+                    <label><input type="radio" name="colorScheme" value="scheme1" checked> Scheme 1</label>
+                    <label><input type="radio" name="colorScheme" value="scheme2"> Scheme 2</label>
+                    <label><input type="radio" name="colorScheme" value="scheme3"> Scheme 3</label>
+                    <label><input type="radio" name="colorScheme" value="scheme4"> Scheme 4</label>
+                    <label><input type="radio" name="colorScheme" value="scheme5"> Scheme 5</label>
+                    <label><input type="radio" name="colorScheme" value="random"> Random</label>
+                </div>
+                <input type="color" id="bgColor" value="#ffffff">
+                <button id="generateBtn">Generate Pattern</button>
+            </div>
+            <div class="pattern-container">
+                <canvas id="patternCanvas" width="1080" height="1080"></canvas>
+                <a id="downloadLink" style="display: none;" download="pattern.jpg">Download Image</a>
+                <div id="errorMessages" style="color: red; margin-top: 20px;"></div>
+            </div>
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="close-button">&times;</span>
+            <p id="modal-message"></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
